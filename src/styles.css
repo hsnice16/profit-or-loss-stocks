@@ -43,6 +43,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   padding: 1.5rem;
+  min-height: 75vh;
 }
 
 main :is(.LeftSection, .RightSection) {
