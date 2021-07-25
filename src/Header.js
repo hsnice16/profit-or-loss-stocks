@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className="GithubIconContainer">
-        <a href="https://github.com/hsnice16" target="_blank" rel="noreferrer">
+        <a href="https://github.com/hsnice16/profit-or-loss-stocks" target="_blank" rel="noreferrer">
           <AiFillGithub className="GithubIcon" />
         </a>
       </div>
