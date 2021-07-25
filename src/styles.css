@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+:root {
+  --blue-gray-100: #f1f5f9;
+  --blue-gray-400: #94a3b8;
+  --blue-gray-600: #475569;
+  --indigo-800: #3730a3;
+  --primary-color: #6c63ff;
+  --red-600: #dc2626;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: "Varela Round", sans-serif;
+  padding: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+header .GithubIconContainer {
+  padding: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+  border-left: 2px solid var(--primary-color);
+}
+
+header .GithubIcon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+main :is(.LeftSection, .RightSection) {
+  max-width: 35rem;
+}
+
+main .LeftSection {
+  padding: 1rem;
+}
+
+main .LeftSection img {
+  max-width: 350px;
+}
+
+main .RightSection h3 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  color: var(--blue-gray-600);
+}
+
+main .InputLabelDiv {
+  margin: 0.5rem 0;
+}
+
+main .RightSection :is(label, input) {
+  display: block;
+}
+
+main .RightSection label {
+  font-size: 1.2rem;
+  color: var(--indigo-800);
+  margin: 0.5rem 0;
+}
+
+main .RightSection input {
+  min-width: 20rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border: 1px solid var(--blue-gray-400);
+  background-color: var(--blue-gray-100);
+  border-radius: 5px;
+}
+
+main .RightSection input:focus {
+  outline: none;
+}
+
+main .RightSection .ButtonContainer {
+  width: 21rem;
+  text-align: right;
+}
+
+main .RightSection button {
+  padding: 0.2rem 1rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--indigo-800);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+main .RightSection button:hover {
+  box-shadow: 1px 1px 5px var(--blue-gray-400);
+}
+
+main .RightSection .showMessageDiv {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+main .RightSection .LossBorder {
+  border: 1px solid var(--red-600);
+}
+
+main .RightSection .GainBorder {
+  border: 1px solid var(--indigo-800);
+}
+
+footer {
+  color: var(--primary-color);
+  border-top: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .Icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+footer .Icon:hover {
+  transform: scale(1.1);
+}
+
+/* list */
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/*  */
