@@ -1,3 +1,7 @@
+export const hasUserGaveCorrectValue = (state) => {
+  return state.length !== 0 && Number(state) > 0;
+};
+
 export const calculateAmtAndPercent = (
   purchasePrice,
   stockQuantity,

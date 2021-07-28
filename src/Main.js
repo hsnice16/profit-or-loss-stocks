@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DataIllustration from "./assets/data.svg";
 import BearMarketIllustration from "./assets/bear-market.svg";
 import GrowthCurveIllustration from "./assets/growth-curve.svg";
-import { calculateAmtAndPercent } from "./functions";
+import { calculateAmtAndPercent, hasUserGaveCorrectValue } from "./functions";
 
 export default function Main({
   isMoreThanFiftyPercentLoss,
@@ -34,8 +34,9 @@ export default function Main({
 
   const handleCheckBtnClick = () => {
     if (
-      [purchasePrice, stockQuantity, currentPrice].includes("") ||
-      [purchasePrice, stockQuantity, currentPrice].includes("0")
+      !hasUserGaveCorrectValue(purchasePrice) ||
+      !hasUserGaveCorrectValue(stockQuantity) ||
+      !hasUserGaveCorrectValue(currentPrice)
     ) {
       setShowMessage(
         "Enter valid Purchase Price, Stock Quantity, and Current Price"
